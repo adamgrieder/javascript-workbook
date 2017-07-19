@@ -50,12 +50,6 @@ function pigLatin(word) {
 
 }
 
-var trimSpace = str.trim('rock');
-var lowerCase = str.toLowerCase('scissors');
-
-
-
-
 function getPrompt() {
   rl.question('word ', (answer) => {
     console.log( pigLatin(answer) );

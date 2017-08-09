@@ -27,18 +27,16 @@ class Ship {
     this.type = type;
     this.ability = ability;
     this.crew = [];
-    this.missionStatement = function(){
-    for (var i = 0; i < this.crew.length; i++) {
-    var pjob = this.crew[i].job;
-    var shiptype = jobTypes[pjob];
-    if(shiptype === this.type){
-    return this.ability;
-    }
+    this.missionStatement = function() {
+      if (this.crew < 1) {
+        return "Can't perform a mission yet.";
+      }
+  else { return ability;
   }
-return "Can't perform a mission yet."
-  }
+};
 }
 }
+
 //tests
 if (typeof describe === 'function'){
   describe('CrewMember', function(){

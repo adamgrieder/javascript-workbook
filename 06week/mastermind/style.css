@@ -47,7 +47,7 @@ padding: white;
 }
 
 p {
-  font-style: 2px;
+  font-style: 1px;
   color: white;
 
 }
@@ -85,4 +85,9 @@ p {
   margin-bottom: 5px;
   padding-bottom: 2.5px;
   padding-top: 3.5px;
+}
+
+.space {
+  width: 100px;
+  height: 100px;
 }

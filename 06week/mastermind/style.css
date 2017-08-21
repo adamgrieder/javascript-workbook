@@ -1,0 +1,88 @@
+.header {
+  font-size: 10px;
+  color: #6666ff;
+}
+
+.container {
+margin: 0 auto;
+width: 50%;
+}
+
+.ball, .guess {
+  background-color: black;
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+.button {
+width: 75px;
+background-color: black;
+color: white;
+padding: white;
+}
+.red {
+  background-color: #ff3300;
+}
+
+.green {
+    background-color: #66ff66;
+}
+
+.yellow {
+    background-color: #ffff66;
+}
+
+.blue {
+  background-color: #3366ff;
+}
+
+.purple {
+  background-color: #9900ff;
+}
+
+.orange {
+  background-color: #ff9900;
+}
+
+p {
+  font-style: 2px;
+  color: white;
+
+}
+
+.text {
+  width: 200px;
+  border-style: dashed;
+  background-color: magenta;
+
+}
+
+.hints {
+  width: 33px;
+  height: 33px;
+  display: inline-block;
+  padding-left: 9px;
+}
+
+.hint {
+  background-color: black;
+  float: left;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  margin: 2px;
+}
+
+.gameboard {
+  background-color: magenta;
+  padding: 2px;
+  width: 200px;
+}
+
+.guesses {
+  margin-bottom: 5px;
+  padding-bottom: 2.5px;
+  padding-top: 3.5px;
+}

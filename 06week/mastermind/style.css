@@ -1,93 +1,94 @@
-.header {
-  font-size: 10px;
-  color: #6666ff;
+body {
+	background-color: magenta;
+  padding-bottom: 500px;
 }
 
-.container {
-margin: 0 auto;
-width: 50%;
+.sttext {
+  color: aqua;
 }
 
-.ball, .guess {
-  background-color: black;
-  display: inline-block;
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
+.rBoard {
+	margin: 20px 0;
+
 }
 
-.button {
-width: 75px;
-background-color: black;
-color: white;
-padding: white;
+.rBoard .row {
+	height: 50px;
 }
-.red {
-  background-color: #ff3300;
+.pegph .row {
+	background: gray;
+	border: 1px solid black;
 }
 
-.green {
-    background-color: #66ff66;
+.circle {
+	height: 30px;
+	width: 30px;
+	border-radius: 50%;
+	margin: 5px 8px;
+	display: inline-block;
+	background-color: black;
 }
 
-.yellow {
-    background-color: #ffff66;
+.cPal {
+	height: 40px;
+	width: 40px;
+	border-radius: 50%;
+	border: 1px solid black;
+	margin: 5px 8px;
+	display: inline-block;
+}
+.nTurns h2 {
+	text-align: right;
+	padding: 0 20px;
+	line-height: auto;
+	margin: 8px auto;
 }
 
-.blue {
-  background-color: #3366ff;
+.outcome h2 {
+	text-align: left;
+	padding: 0 8px;
+	line-height: auto;
+	margin: 8px auto;
+	display: inline-block;
 }
 
-.purple {
-  background-color: #9900ff;
+
+.colPal h3 {
+	padding: 6px;
 }
 
-.orange {
-  background-color: #ff9900;
+.corrPos {
+	color: white;
+}
+.corrCol {
+	color: black;
 }
 
-p {
-  font-style: 1px;
+#orange {
+  background: orange;
+}
+#red {
+  background: red;
+}
+#green {
+  background: green;
+}
+#blue {
+  background: blue;
+}
+#yellow {
+  background: yellow;
+}
+#purple {
+  background: purple;
+}
+
+.ckCom {
   color: white;
-
-}
-
-.text {
-  width: 200px;
-  border-style: dashed;
-  background-color: magenta;
-
-}
-
-.hints {
-  width: 33px;
-  height: 33px;
-  display: inline-block;
-  padding-left: 9px;
-}
-
-.hint {
-  background-color: black;
-  float: left;
-  width: 11px;
-  height: 11px;
-  border-radius: 50%;
-  margin: 2px;
-}
-
-.gameboard {
-  background-color: magenta;
-  padding: 2px;
-  width: 200px;
-}
-
-.guesses {
-  margin-bottom: 5px;
-  padding-bottom: 2.5px;
-  padding-top: 3.5px;
-}
-
-.space {
-  width: 100px;
-  height: 100px;
+	font-size: 28px;
+	text-align: center;
+	padding: 5px 5px;
+	margin: 10px 20px;
+	border: 2px solid white;
+	background-color: black;
 }

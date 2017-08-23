@@ -1,150 +1,150 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
+
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Mastermind</title>
-  <link rel="stylesheet" href="style.css" />
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="style.css" />
+
+	<title>Mastermind: Checkpoint 2</title>
 </head>
+
 <body>
-  <script type="text/javascript" src="./script.js"></script>
+	<div class="row">
+		<div class="col-sm-8">
+			<h1 class ="sttext">Become The Mastermind!</h1>
+			<h3 class="sttext">How to Play Mastermind:</h3>
+			<h4 class ="sttext">To win a game of Mastermind, the player must correctly guess the hidden code made up of the randomized placement of colored pegs. In this game the player has 6 possible colors selections and will need to get their placement and color correct within 8 turns. To start, simply click on the pegs to select their color, and then click on the board to place them within the rows, starting at one. To submit your guess of colors and placements on a row, use the check button! The white number indicates the number of pegs with the correct color and placement. The black number indicates the number of pegs with only the correct color.</h4>
+		</div>
+	</div>
+	<div class="rBoard">
+		<div class="col-sm-1 nTurns">
+			<div class="row">
+				<h2>1</h2>
+			</div>
+			<div class="row">
+				<h2>2</h2>
+			</div>
+			<div class="row">
+				<h2>3</h2>
+			</div>
+			<div class="row">
+				<h2>4</h2>
+			</div>
+			<div class="row">
+				<h2>5</h2>
+			</div>
+			<div class="row">
+				<h2>6</h2>
+			</div>
+			<div class="row">
+				<h2>7</h2>
+			</div>
+			<div class="row">
+				<h2>8</h2>
+			</div>
+		</div>
+		<div class="col-sm-2 pegph">
+			<div class="row">
+				<div class="circle plm0"></div>
+				<div class="circle plm1"></div>
+				<div class="circle plm2"></div>
+				<div class="circle plm3"></div>
+			</div>
+			<div class="row">
+				<div class="circle plm0"></div>
+				<div class="circle plm1"></div>
+				<div class="circle plm2"></div>
+				<div class="circle plm3"></div>
+			</div>
+			<div class="row">
+				<div class="circle plm0"></div>
+				<div class="circle plm1"></div>
+				<div class="circle plm2"></div>
+				<div class="circle plm3"></div>
+			</div>
+			<div class="row">
+				<div class="circle plm0"></div>
+				<div class="circle plm1"></div>
+				<div class="circle plm2"></div>
+				<div class="circle plm3"></div>
+			</div>
+			<div class="row">
+				<div class="circle plm0"></div>
+				<div class="circle plm1"></div>
+				<div class="circle plm2"></div>
+				<div class="circle plm3"></div>
+			</div>
+			<div class="row">
+				<div class="circle plm0"></div>
+				<div class="circle plm1"></div>
+				<div class="circle plm2"></div>
+				<div class="circle plm3"></div>
+			</div>
+			<div class="row">
+				<div class="circle plm0"></div>
+				<div class="circle plm1"></div>
+				<div class="circle plm2"></div>
+				<div class="circle plm3"></div>
+			</div>
+			<div class="row">
+				<div class="circle plm0"></div>
+				<div class="circle plm1"></div>
+				<div class="circle plm2"></div>
+				<div class="circle plm3"></div>
+			</div>
+		</div>
+		<div class="col-sm-1 outcome">
+			<div class="row">
+				<h2 class="corrPos"></h2>
+				<h2 class="corrCol"></h2>
+			</div>
+			<div class="row">
+				<h2 class="corrPos"></h2>
+				<h2 class="corrCol"></h2>
+			</div>
+			<div class="row">
+				<h2 class="corrPos"></h2>
+				<h2 class="corrCol"></h2>
+			</div>
+			<div class="row">
+				<h2 class="corrPos"></h2>
+				<h2 class="corrCol"></h2>
+			</div>
+			<div class="row">
+				<h2 class="corrPos"></h2>
+				<h2 class="corrCol"></h2>
+			</div>
+			<div class="row">
+				<h2 class="corrPos"></h2>
+				<h2 class="corrCol"></h2>
+			</div>
+			<div class="row">
+				<h2 class="corrPos"></h2>
+				<h2 class="corrCol"></h2>
+			</div>
+			<div class="row">
+				<h2 class="corrPos"></h2>
+				<h2 class="corrCol"></h2>
+			</div>
+		</div>
+		<div class="col-sm-2 colPal">
+			<h3 class="sttext">Selected Color :</h3>
+			<div class="cPal" id="orange"></div>
+			<div class="cPal" id="red"></div>
+			<div class="cPal" id="green"></div>
+			<div class="cPal" id="blue"></div>
+			<div class="cPal" id="yellow"></div>
+			<div class="cPal" id="purple"></div>
 
-<div class="container">
-<div class="header"><u><h1>Become the Mastermind!</div></u></h1>
-
-<div class="colors">
-    <div class="red ball"></div>
-    <div class="green ball"></div>
-    <div class="yellow ball"></div>
-    <div class="blue ball"></div>
-    <div class="purple ball"></div>
-    <div class="orange ball"></div>
-  </div>
-  <div class="gameboard">
-    <div class="guesses" prow="0">
-      <div class="guess" place="0"></div>
-      <div class="guess" place="1"></div>
-      <div class="guess" place="2"></div>
-      <div class="guess" place="3"></div>
-      <div class="hints">
-        <div class="hint"></div>
-        <div class="hint"></div>
-        <div class="hint"></div>
-        <div class="hint"></div>
-      </div>
-    </div>
-    <div class="guesses" prow="1">
-      <div class="guess" place="0"></div>
-      <div class="guess" place="1"></div>
-      <div class="guess" place="2"></div>
-      <div class="guess" place="3"></div>
-      <div class="hints">
-        <div class="hint"></div>
-        <div class="hint"></div>
-        <div class="hint"></div>
-        <div class="hint"></div>
-      </div>
-    </div>
-    <div class="guesses" prow="2">
-      <div class="guess" place="0"></div>
-      <div class="guess" place="1"></div>
-      <div class="guess" place="2"></div>
-      <div class="guess" place="3"></div>
-      <div class="hints">
-        <div class="hint"></div>
-        <div class="hint"></div>
-        <div class="hint"></div>
-        <div class="hint"></div>
-      </div>
-    </div>
-    <div class="guesses" prow="3">
-      <div class="guess" place="0"></div>
-      <div class="guess" place="1"></div>
-      <div class="guess" place="2"></div>
-      <div class="guess" place="3"></div>
-      <div class="hints">
-        <div class="hint"></div>
-        <div class="hint"></div>
-        <div class="hint"></div>
-        <div class="hint"></div>
-      </div>
-    </div>
-    <div class="guesses" prow="4">
-      <div class="guess" place="0"></div>
-      <div class="guess" place="1"></div>
-      <div class="guess" place="2"></div>
-      <div class="guess" place="3"></div>
-      <div class="hints">
-        <div class="hint"></div>
-        <div class="hint"></div>
-        <div class="hint"></div>
-        <div class="hint"></div>
-      </div>
-    </div>
-    <div class="guesses" prow="5">
-      <div class="guess" place="0"></div>
-      <div class="guess" place="1"></div>
-      <div class="guess" place="2"></div>
-      <div class="guess" place="3"></div>
-      <div class="hints">
-        <div class="hint"></div>
-        <div class="hint"></div>
-        <div class="hint"></div>
-        <div class="hint"></div>
-      </div>
-    </div>
-    <div class="guesses" prow="6">
-      <div class="guess" place="0"></div>
-      <div class="guess" place="1"></div>
-      <div class="guess" place="2"></div>
-      <div class="guess" place="3"></div>
-      <div class="hints">
-        <div class="hint"></div>
-        <div class="hint"></div>
-        <div class="hint"></div>
-        <div class="hint"></div>
-      </div>
-    </div>
-    <div class="guesses" prow="7">
-      <div class="guess" place="0"></div>
-      <div class="guess" place="1"></div>
-      <div class="guess" place="2"></div>
-      <div class="guess" place="3"></div>
-      <div class="hints">
-        <div class="hint"></div>
-        <div class="hint"></div>
-        <div class="hint"></div>
-        <div class="hint"></div>
-      </div>
-    </div>
-    <div class="guesses" prow="8">
-      <div class="guess" place="0"></div>
-      <div class="guess" place="1"></div>
-      <div class="guess" place="2"></div>
-      <div class="guess" place="3"></div>
-      <div class="hints">
-        <div class="hint"></div>
-        <div class="hint"></div>
-        <div class="hint"></div>
-        <div class="hint"></div>
-      </div>
-    </div>
-    <div class="guesses" prow="9">
-      <div class="guess" place="0"></div>
-      <div class="guess" place="1"></div>
-      <div class="guess" place="2"></div>
-      <div class="guess" place="3"></div>
-      <div class="hints">
-        <div class="hint"></div>
-        <div class="hint"></div>
-        <div class="hint"></div>
-        <div class="hint"></div>
-      </div>
-    </div>
-  </div>
-  <div class="text">
-  <p> Green color hints indicate the correct color, while White color hints indicate correct color and placement!</p></div>
-  <button class="button" type="button">Play Again!</button>
-</div>
-<div class="space"></div>
+			<div class="row">
+				<button class="col-sm-8 ckCom">Check Guess!</button>
+			</div>
+		</div>
+	</div>
+<div class ="space"></div>
 </body>
+<script type="text/javascript" src="./script.js"></script>
 </html>

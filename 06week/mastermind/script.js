@@ -6,7 +6,7 @@ for (i = 0; i < 4; i ++) {
 }
 console.log(secretCode);
 
-//color picker range, uses numbers 0-5 as colors / clicking on color resets border of laspt picked option
+//color picker range, uses numbers 0-5 as colors / clicking on color resets border of last picked option
 colorCode = ["orange", "red", "green", "blue", "yellow", "purple"];
 colorText = ["orange", "red", "green", "blue", "yellow", "purple"];
 cPal = document.getElementsByClassName("cPal");

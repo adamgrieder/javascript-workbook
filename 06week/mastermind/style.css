@@ -18,6 +18,7 @@ body {
 .pegph .row {
 	background: gray;
 	border: 1px solid black;
+	width: 205px;
 }
 
 .circle {

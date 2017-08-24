@@ -12,7 +12,6 @@ colorText = ["orange", "red", "green", "blue", "yellow", "purple"];
 cPal = document.getElementsByClassName("cPal");
 cPalReset = function() {
 	for (i = 0; i < cPal.length; i++) {
-		cPal[i].style.border="1px solid black";
 	}
 }
 //creates event listeners for each range of colored circle, while resetting the css by adding border and changing Corrcol var//
@@ -20,7 +19,6 @@ cPalReset = function() {
 for (i = 0; i < cPal.length; i ++) {
 	cPal[i].addEventListener("click", function() {
 		cPalReset();
-		this.style.border="4px solid black";
 		currentColor = colorText.indexOf(this.id);
 	})
 }

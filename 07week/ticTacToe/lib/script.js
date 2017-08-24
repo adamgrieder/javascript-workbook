@@ -12,9 +12,9 @@ class TicTacToe extends React.Component {
       React.createElement(
         "div",
         { className: "row" },
-        React.createElement("div", { "data-cell": "0" }),
-        React.createElement("div", { "data-cell": "1" }),
-        React.createElement("div", { "data-cell": "2" })
+        React.createElement("div", { "data-cell": "0", onClick: this.makeMove }),
+        React.createElement("div", { "data-cell": "1", onClick: this.makeMove }),
+        React.createElement("div", { "data-cell": "2", onClick: this.makeMove })
       ),
       React.createElement(
         "div",
